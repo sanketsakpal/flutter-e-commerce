@@ -40,7 +40,7 @@ res.send("hello world");
        
 // connection
 const dbs = process.env.db;
-console.log(dbs);
+
 mongoose.connect(dbs).then(()=>{
     console.log("connection successful");
 }).catch(e => {
